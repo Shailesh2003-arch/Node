@@ -11,13 +11,15 @@ const respone = http.createServer((req, res) => {
   let path = req.url;
   console.log(path);
   if (path === "/" || path.toLowerCase() === "/home") {
-    res.end(html);
+    res.end(html.replace("{{%Content%}}", "You are in home page"));
+  } else if (path.toLocaleLowerCase() === "/products") {
+    res.end(html.replace("{{%Content%}}", "You are in products page"));
   } else if (path.toLocaleLowerCase() === "/about") {
-    res.end(`You are in about page`);
+    res.end(html.replace("{{%Content%}}", "You are in about page"));
   } else if (path.toLocaleLowerCase() === "/contact") {
-    res.end(`You are in contact page`);
+    res.end(html.replace("{{%Content%}}", "You are in contact page"));
   } else {
-    res.end(`Error 404:Page not found`);
+    res.end(html.replace("{{%Content%}}", "Error: 404 page not found"));
   }
 });
 
