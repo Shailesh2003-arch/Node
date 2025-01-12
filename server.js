@@ -11,7 +11,7 @@ const respone = http.createServer((req, res) => {
   let path = req.url;
   console.log(path);
   if (path === "/" || path.toLowerCase() === "/home") {
-    res.end(`You are at home page`);
+    res.end(html);
   } else if (path.toLocaleLowerCase() === "/about") {
     res.end(`You are in about page`);
   } else if (path.toLocaleLowerCase() === "/contact") {
@@ -19,9 +19,6 @@ const respone = http.createServer((req, res) => {
   } else {
     res.end(`Error 404:Page not found`);
   }
-
-  //   console.log(req);
-  //   console.log(res);
 });
 
 respone.listen(8000, "127.0.0.1", () => {
