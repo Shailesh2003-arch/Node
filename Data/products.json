@@ -1,0 +1,122 @@
+[
+  {
+    "brand": "Apple",
+    "model": "iPhone 14",
+    "price": 999,
+    "features": {
+      "storage": "128GB",
+      "camera": "12MP Dual",
+      "battery": "3115mAh",
+      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.0"]
+    },
+    "availability": true
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy S23",
+    "price": 849,
+    "features": {
+      "storage": "256GB",
+      "camera": "50MP Triple",
+      "battery": "4500mAh",
+      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.1"]
+    },
+    "availability": true
+  },
+  {
+    "brand": "Google",
+    "model": "Pixel 7",
+    "price": 599,
+    "features": {
+      "storage": "128GB",
+      "camera": "50MP Dual",
+      "battery": "4355mAh",
+      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
+    },
+    "availability": false
+  },
+  {
+    "brand": "OnePlus",
+    "model": "10 Pro",
+    "price": 699,
+    "features": {
+      "storage": "256GB",
+      "camera": "48MP Triple",
+      "battery": "5000mAh",
+      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
+    },
+    "availability": true
+  },
+  {
+    "brand": "Xiaomi",
+    "model": "Mi 12",
+    "price": 549,
+    "features": {
+      "storage": "128GB",
+      "camera": "108MP Quad",
+      "battery": "4600mAh",
+      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
+    },
+    "availability": true
+  },
+  {
+    "brand": "Sony",
+    "model": "Xperia 1 IV",
+    "price": 1299,
+    "features": {
+      "storage": "256GB",
+      "camera": "12MP Triple",
+      "battery": "5000mAh",
+      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
+    },
+    "availability": false
+  },
+  {
+    "brand": "Oppo",
+    "model": "Find X5 Pro",
+    "price": 999,
+    "features": {
+      "storage": "256GB",
+      "camera": "50MP Triple",
+      "battery": "5000mAh",
+      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
+    },
+    "availability": true
+  },
+  {
+    "brand": "Vivo",
+    "model": "X80 Pro",
+    "price": 899,
+    "features": {
+      "storage": "256GB",
+      "camera": "50MP Quad",
+      "battery": "4700mAh",
+      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
+    },
+    "availability": true
+  },
+  {
+    "brand": "Realme",
+    "model": "GT 2 Pro",
+    "price": 799,
+    "features": {
+      "storage": "128GB",
+      "camera": "50MP Triple",
+      "battery": "5000mAh",
+      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
+    },
+    "availability": true
+  },
+  {
+    "brand": "Motorola",
+    "model": "Edge 30 Ultra",
+    "price": 899,
+    "features": {
+      "storage": "128GB",
+      "camera": "200MP Triple",
+      "battery": "4610mAh",
+      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
+    },
+    "availability": true
+  }
+]
