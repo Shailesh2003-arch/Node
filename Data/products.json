@@ -1,122 +1,132 @@
 [
   {
-    "brand": "Apple",
-    "model": "iPhone 14",
-    "price": 999,
-    "features": {
-      "storage": "128GB",
-      "camera": "12MP Dual",
-      "battery": "3115mAh",
-      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.0"]
-    },
-    "availability": true
+    "id": 1,
+    "name": "iPhone 14",
+    "color": ["Midnight", "Starlight", "Purple", "Blue"],
+    "rom": "128GB",
+    "modelName": "A2649",
+    "modelNumber": "MQ3E3HN/A",
+    "size": "6.1 inches",
+    "camera": "12MP Dual",
+    "price": "₹79,900",
+    "description": "Experience the ultimate performance with iPhone 14's advanced A15 Bionic chip.",
+    "productImage": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iPhone-14_Midnight_09122022.jpg"
   },
   {
-    "brand": "Samsung",
-    "model": "Galaxy S23",
-    "price": 849,
-    "features": {
-      "storage": "256GB",
-      "camera": "50MP Triple",
-      "battery": "4500mAh",
-      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.1"]
-    },
-    "availability": true
+    "id": 2,
+    "name": "Samsung Galaxy S23",
+    "color": ["Phantom Black", "Cream", "Green", "Lavender"],
+    "rom": "256GB",
+    "modelName": "SM-S911B",
+    "modelNumber": "S911BZKD",
+    "size": "6.1 inches",
+    "camera": "50MP Triple",
+    "price": "₹74,999",
+    "description": "Compact and powerful, the Galaxy S23 offers an amazing display and pro-grade camera.",
+    "productImage": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzkdinu/gallery/in-galaxy-s23-s911-451610-sm-s911bzkdinu-534192982?$650_519_PNG$"
   },
   {
-    "brand": "Google",
-    "model": "Pixel 7",
-    "price": 599,
-    "features": {
-      "storage": "128GB",
-      "camera": "50MP Dual",
-      "battery": "4355mAh",
-      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
-    },
-    "availability": false
+    "id": 3,
+    "name": "Google Pixel 7",
+    "color": ["Snow", "Obsidian", "Lemongrass"],
+    "rom": "128GB",
+    "modelName": "GP7",
+    "modelNumber": "GQML3",
+    "size": "6.3 inches",
+    "camera": "50MP Dual",
+    "price": "₹59,999",
+    "description": "Google's flagship phone with AI-powered features and a brilliant camera.",
+    "productImage": "https://store.google.com/product/images/phone_pixel_7_snow_front.png"
   },
   {
-    "brand": "OnePlus",
-    "model": "10 Pro",
-    "price": 699,
-    "features": {
-      "storage": "256GB",
-      "camera": "48MP Triple",
-      "battery": "5000mAh",
-      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
-    },
-    "availability": true
+    "id": 4,
+    "name": "OnePlus 10 Pro",
+    "color": ["Emerald Forest", "Volcanic Black"],
+    "rom": "256GB",
+    "modelName": "NE2210",
+    "modelNumber": "NE2211",
+    "size": "6.7 inches",
+    "camera": "48MP Triple",
+    "price": "₹66,999",
+    "description": "Elevate your smartphone experience with the OnePlus 10 Pro and ultra-fast charging.",
+    "productImage": "https://image01.oneplus.net/ebp/202201/21/1-m00-1c-0a-rb8bwl9kq0eabxqiaaebqkqzq7q456_840_840.png"
   },
   {
-    "brand": "Xiaomi",
-    "model": "Mi 12",
-    "price": 549,
-    "features": {
-      "storage": "128GB",
-      "camera": "108MP Quad",
-      "battery": "4600mAh",
-      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
-    },
-    "availability": true
+    "id": 5,
+    "name": "Xiaomi Mi 12",
+    "color": ["Blue", "Gray", "Purple"],
+    "rom": "128GB",
+    "modelName": "2201122C",
+    "modelNumber": "XM12BL",
+    "size": "6.28 inches",
+    "camera": "108MP Quad",
+    "price": "₹54,999",
+    "description": "An affordable powerhouse with a stunning design and high-resolution camera.",
+    "productImage": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-12/blue.png"
   },
   {
-    "brand": "Sony",
-    "model": "Xperia 1 IV",
-    "price": 1299,
-    "features": {
-      "storage": "256GB",
-      "camera": "12MP Triple",
-      "battery": "5000mAh",
-      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
-    },
-    "availability": false
+    "id": 6,
+    "name": "Sony Xperia 1 IV",
+    "color": ["Frosted Black", "Purple"],
+    "rom": "256GB",
+    "modelName": "XQ-CT54",
+    "modelNumber": "XQC54",
+    "size": "6.5 inches",
+    "camera": "12MP Triple",
+    "price": "₹1,19,999",
+    "description": "A smartphone for creatives, with 4K OLED display and pro-level camera features.",
+    "productImage": "https://www.sony.com/image/sony-xperia-1-iv-frosted-black.png"
   },
   {
-    "brand": "Oppo",
-    "model": "Find X5 Pro",
-    "price": 999,
-    "features": {
-      "storage": "256GB",
-      "camera": "50MP Triple",
-      "battery": "5000mAh",
-      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
-    },
-    "availability": true
+    "id": 7,
+    "name": "Oppo Find X5 Pro",
+    "color": ["Ceramic White", "Glaze Black"],
+    "rom": "256GB",
+    "modelName": "CPH2305",
+    "modelNumber": "CPH2305",
+    "size": "6.7 inches",
+    "camera": "50MP Triple",
+    "price": "₹74,999",
+    "description": "A sleek design paired with incredible camera and smooth performance.",
+    "productImage": "https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/find-x5-pro/navigation/find-x5-pro-white.png"
   },
   {
-    "brand": "Vivo",
-    "model": "X80 Pro",
-    "price": 899,
-    "features": {
-      "storage": "256GB",
-      "camera": "50MP Quad",
-      "battery": "4700mAh",
-      "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2"]
-    },
-    "availability": true
+    "id": 8,
+    "name": "Vivo X80 Pro",
+    "color": ["Cosmic Black", "Urban Blue"],
+    "rom": "256GB",
+    "modelName": "V2185A",
+    "modelNumber": "VIVOX80P",
+    "size": "6.78 inches",
+    "camera": "50MP Quad",
+    "price": "₹79,999",
+    "description": "Top-notch performance with ZEISS optics for photography enthusiasts.",
+    "productImage": "https://www.vivo.com/content/dam/vivo/india/products/x80-pro/cosmic-black.png"
   },
   {
-    "brand": "Realme",
-    "model": "GT 2 Pro",
-    "price": 799,
-    "features": {
-      "storage": "128GB",
-      "camera": "50MP Triple",
-      "battery": "5000mAh",
-      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
-    },
-    "availability": true
+    "id": 9,
+    "name": "Realme GT 2 Pro",
+    "color": ["Paper White", "Steel Black", "Paper Green"],
+    "rom": "128GB",
+    "modelName": "RMX3301",
+    "modelNumber": "GT2P",
+    "size": "6.7 inches",
+    "camera": "50MP Triple",
+    "price": "₹49,999",
+    "description": "The world's first bio-based design smartphone with exceptional performance.",
+    "productImage": "https://image01.realme.net/general/20220107/1641542340.png"
   },
   {
-    "brand": "Motorola",
-    "model": "Edge 30 Ultra",
-    "price": 899,
-    "features": {
-      "storage": "128GB",
-      "camera": "200MP Triple",
-      "battery": "4610mAh",
-      "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.2"]
-    },
-    "availability": true
+    "id": 10,
+    "name": "Motorola Edge 30 Ultra",
+    "color": ["Starlight White", "Interstellar Black"],
+    "rom": "128GB",
+    "modelName": "XT2251",
+    "modelNumber": "EDG30U",
+    "size": "6.67 inches",
+    "camera": "200MP Triple",
+    "price": "₹59,999",
+    "description": "Revolutionary 200MP camera with lightning-fast charging and stunning display.",
+    "productImage": "https://motorola.com/sites/default/files/styles/product_listing/public/2022-09/edge-30-ultra-starlight-white.png"
   }
 ]
