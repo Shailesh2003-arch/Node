@@ -4,80 +4,111 @@ const http = require("http");
 const fs = require("fs");
 const url = require("url");
 
-const html = fs.readFileSync("./template/index.html", "utf-8");
-let products = JSON.parse(fs.readFileSync("./Data/products.json", "utf-8")); //this becomes the array of objects...
+// const html = fs.readFileSync("./template/index.html", "utf-8");
+// let products = JSON.parse(fs.readFileSync("./Data/products.json", "utf-8")); //this becomes the array of objects...
 
-let productListHtml = fs.readFileSync("./template/product-list.html", "utf-8");
+// let productListHtml = fs.readFileSync("./template/product-list.html", "utf-8");
 
-const productHtmlArray = products.map((prod) => {
-  let output = productListHtml.replace("{{%IMAGE%}}", prod.image);
-  output = output.replace("{{%NAME%}}", prod.name);
-  output = output.replace("{{%MODELNAME%}}", prod.modelName);
-  output = output.replace("{{%MODELNUMBER%}}", prod.modelNumber);
-  output = output.replace("{{%SIZE%}}", prod.size);
-  output = output.replace("{{%CAMERA%}}", prod.camera);
-  output = output.replace("{{%PRICE%}}", prod.price);
-  output = output.replace("{{%COLOR%}}", prod.color);
-  output = output.replace("{{%ID%}}", prod.id);
-  return output;
-});
+// const productHtmlArray = products.map((prod) => {
+//   let output = productListHtml.replace("{{%IMAGE%}}", prod.image);
+//   output = output.replace("{{%NAME%}}", prod.name);
+//   output = output.replace("{{%MODELNAME%}}", prod.modelName);
+//   output = output.replace("{{%MODELNUMBER%}}", prod.modelNumber);
+//   output = output.replace("{{%SIZE%}}", prod.size);
+//   output = output.replace("{{%CAMERA%}}", prod.camera);
+//   output = output.replace("{{%PRICE%}}", prod.price);
+//   output = output.replace("{{%COLOR%}}", prod.color);
+//   output = output.replace("{{%ID%}}", prod.id);
+//   return output;
+// });
 
-const respone = http.createServer((req, res) => {
-  //   console.log("A new request hit the server");
-  // res.end(html);
+const server = http.createServer();
 
-  const { query, pathname: path } = url.parse(req.url, true);
+// const respone = http.createServer((req, res) => {
+//   //   console.log("A new request hit the server");
+//   // res.end(html);
 
-  // let path = req.url;
+//   const { query, pathname: path } = url.parse(req.url, true);
 
-  // console.log(path);
-  if (path === "/" || path.toLowerCase() === "/home") {
-    res.writeHead(200, {
-      "Content-Type": "text/html",
-      "my-header": "hello world",
-    });
+//   // let path = req.url;
 
-    res.end(html.replace("{{%Content%}}", productListHtml));
-  } else if (path.toLocaleLowerCase() === "/products") {
-    if (!query.id) {
-      let producutResponseHtml = html.replace(
-        "{{%Content%}}",
-        productHtmlArray.join("")
-      );
-      res.writeHead(200, {
-        "Content-type": "text/html",
-      });
-      res.end(producutResponseHtml);
-    } else {
-      res.end(`This is a product wit ID = ` + query.id);
-    }
+//   // console.log(path);
+//   if (path === "/" || path.toLowerCase() === "/home") {
+//     res.writeHead(200, {
+//       "Content-Type": "text/html",
+//       "my-header": "hello world",
+//     });
 
-    console.log(products);
-    console.log(productHtmlArray.join(","));
-  } else if (path.toLocaleLowerCase() === "/about") {
-    res.writeHead(200, {
-      "Content-Type": "text/html",
-      "my-header": "hello world",
-    });
+//     res.end(html.replace("{{%Content%}}", productListHtml));
+//   } else if (path.toLocaleLowerCase() === "/products") {
+//     if (!query.id) {
+//       let producutResponseHtml = html.replace(
+//         "{{%Content%}}",
+//         productHtmlArray.join("")
+//       );
+//       res.writeHead(200, {
+//         "Content-type": "text/html",
+//       });
+//       res.end(producutResponseHtml);
+//     } else {
+//       res.end(`This is a product wit ID = ` + query.id);
+//     }
 
-    res.end(html.replace("{{%Content%}}", "You are in about page"));
-  } else if (path.toLocaleLowerCase() === "/contact") {
-    res.writeHead(200, {
-      "Content-Type": "text/html",
-      "my-header": "hello world",
-    });
+//     console.log(products);
+//     console.log(productHtmlArray.join(","));
+//   } else if (path.toLocaleLowerCase() === "/about") {
+//     res.writeHead(200, {
+//       "Content-Type": "text/html",
+//       "my-header": "hello world",
+//     });
 
-    res.end(html.replace("{{%Content%}}", "You are in contact page"));
-  } else {
-    res.writeHead(404, {
-      "Content-Type": "text/html",
-      "my-header": "sorry the page you're finding doesn't exist",
-    });
+//     res.end(html.replace("{{%Content%}}", "You are in about page"));
+//   } else if (path.toLocaleLowerCase() === "/contact") {
+//     res.writeHead(200, {
+//       "Content-Type": "text/html",
+//       "my-header": "hello world",
+//     });
 
-    res.end(html.replace("{{%Content%}}", "Error: 404 page not found"));
-  }
-});
+//     res.end(html.replace("{{%Content%}}", "You are in contact page"));
+//   } else {
+//     res.writeHead(404, {
+//       "Content-Type": "text/html",
+//       "my-header": "sorry the page you're finding doesn't exist",
+//     });
 
-respone.listen(8000, "127.0.0.1", () => {
+//     res.end(html.replace("{{%Content%}}", "Error: 404 page not found"));
+//   }
+// });
+
+server.listen(8000, "127.0.0.1", () => {
   console.log("Server started");
+});
+
+// server.on("request", (req, res) => {
+//   fs.readFile("./files/large-file.txt", (err, data) => {
+//     if (err) {
+//       res.end(`Something went wrong!...`);
+//       return;
+//     }
+//     res.end(data);
+//   });
+// });
+
+server.on("request", (req, res) => {
+  console.log(`Request received: ${req.url}`);
+  let rs = fs.createReadStream("./files/large-file.txt");
+  rs.on("data", (chunk) => {
+    console.log("reading data");
+    res.write(chunk);
+    console.log(`data wrote`);
+  });
+  rs.on("end", () => {
+    console.log("end response");
+    res.end(); // Correctly ends the response
+  });
+  rs.on("error", (err) => {
+    console.error("Error reading file:", err);
+    res.statusCode = 500;
+    res.end("Internal Server Error");
+  });
 });
